@@ -29,10 +29,12 @@ cinii-ux
 # ソースコード構成ファイル
 
 HTML
+
 * index.html
 トップページ
 
 スタイルシート
+
 * /css/common.css
 共通スタイルシート。iPad Safariをターゲットに全体およびヘッダ部分のスタイル指定。
 * /css/detail-search.css.css
@@ -45,6 +47,7 @@ HTML
 ローディングのサークルアイコンやオプション的な表示要素のスタイル指定。
 
 JavaScript
+
 * /js/jquery-2.0.3.min.js
 Jquery DOM操作系Javascriptライブラリ　取得元：http://jquery.com (MITライセンス)
 * /js/setup.js
@@ -66,6 +69,7 @@ AjaxによるAPI読み込みを集中管理するクラス
 初回の処理完了後にDelayをかけて、画面全体に対して処理を行うスクリプトCiNiiプロトタイプ専用
 
 PHP
+
 * /php/php_lib/dataget.php
 クロスドメイン制約の回避の為の共通PHPライブラリ（プログラム）※ 80番port  Socket方式http://www.muratayusuke.com/works/#PHPSocket (村田佑介氏 作）
 * /php/php_lib/simple_html_dom.php
