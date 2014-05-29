@@ -1,0 +1,575 @@
+@charset "UTF-8";
+
+/*********************************************************************	*/
+/*2013/07/23  for iPad(iOS6 safari6 upper) width = 1024px  */
+/*********************************************************************	*/
+
+
+
+
+
+
+
+
+#container {
+	overflow: hidden;
+	position: relative;
+}
+
+
+#left_wrapper {
+	/* #list_area{ */
+	float: left;
+	/* overflow:auto; */
+	overflow: auto;
+	overflow-x: hidden;
+	width: 424px;
+	height: 0;
+	background-color: #e8e8e8;
+	-webkit-overflow-scrolling: touch;
+}
+
+.ciniilogo{
+    background: url('../img/niiCiNiiLogoBg.png') center center no-repeat;
+    background-size: 114px 48px;
+}
+
+
+
+
+#list_area {
+	/*
+		overflow:auto;
+		width:428px;
+			height:0;
+		background-color: #e8e8e8;
+		-webkit-overflow-scrolling:touch;
+	*/
+    -webkit-box-sizing: border-box;
+}
+
+#list_target{ /*　#list_target_hito 上あわせ　*/
+	padding-top:48px;
+}
+
+
+#list_target LI {
+	/*border-bottom: solid 1px #444;*/
+}
+
+#list_target LI.selectItem {
+	background-color: #fdcda7;
+}
+
+#list_target LI>div,  #list_target_hito LI>div{
+    position: relative;
+	/*width: 424px;*/
+	overflow: hidden;
+    /*overflow-x: auto;*/
+    /*overflow-y: hidden;*/
+    background-color: #fafafa;
+	border-bottom: solid 1px #ddd;
+}
+
+#list_target LI A, #list_target_hito LI A{
+	display: block;
+    position: relative;
+    overflow: hidden;
+	background-color: white;
+	white-space: nowrap;
+
+    width:424px;
+    height: 54px;
+	color: #222;
+    z-index: 100;
+}
+#list_target LI.even A, #list_target_hito LI.even A{
+    /* background-color: #f7f7f7; */
+}
+
+#list_target_hito LI A{
+    width:424px;
+}
+#list_target LI A SPAN, #list_target_hito LI A SPAN{
+    /*display: block;*/
+    /*margin-top: -8px;*/
+    /*margin-left: 300px;*/
+    /*font-size: 85%;*/
+    /*color: #555;*/
+}
+
+
+
+
+#list_hito-0 LI A{
+    /*background: url('../img/hito-ronbunIcon.png') left center no-repeat;*/
+    /*background: url('../img/niiLeftBGBar0-k.png') 0 0 repeat-y;*/
+    /*background-size: 30px 25px;*/
+    -webkit-box-sizing: border-box;
+    /*border-left: solid 2px #38a5de;*/
+}
+#list_hito-1 LI A{
+    /*background: url('../img/hito-toshoIcon.png') left center no-repeat;*/
+    /*background: url('../img/niiLeftBGBar1-t.png') 0 0 repeat-y;*/
+    /*background-size: 30px 25px;*/
+    -webkit-box-sizing: border-box;
+    /*border-left: solid 2px #f6d76d;*/
+}
+#list_hito-2 LI A{
+    /*background: url('../img/hito-kenkyuIcon.png') left center no-repeat;*/
+    /*background: url('../img/niiLeftBGBar2-k.png') 0 0 repeat-y;*/
+    /*background-size: 30px 25px;*/
+    -webkit-box-sizing: border-box;
+    /*border-left: solid 2px #fe93c2;*/
+}
+
+
+
+
+
+#left_bottom0{
+    -webkit-box-sizing: border-box;
+    /*border-left: solid 1px #38a5de;*/
+}
+#left_bottom1{
+    -webkit-box-sizing: border-box;
+    /*border-left: solid 1px #f6d76d;*/
+}
+#left_bottom2{
+    -webkit-box-sizing: border-box;
+    /*border-left: solid 1px #fe93c2;*/
+}
+
+
+
+
+
+
+#list_target LI>div>div, #list_target_hito LI>div>div {
+
+}
+#list_target LI>div>.bgnumber, #list_target_hito LI>div>.bgnumber{
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 5px;
+    height: 52px;
+    line-height: 52px;
+    top:0;
+	right: 0;
+    color:#aaa;
+	font-size: 24px;
+    z-index: 999;
+    opacity:0.3;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 100;
+   letter-spacing: -1px;
+}
+
+#list_target_hito LI A{
+    height: 54px;
+    overflow: hidden;
+    background-color: white;
+}
+#list_target_hito LI>div{
+    overflow:hidden;
+}
+#list_target_hito LI>div>div{
+}
+
+#list_area A.selected {
+	/*background-color: #94c5eb !important;*/
+	/*background-color: #f0cf65 !important;*/
+	background-color: #ddd;
+}
+#list_target_hito LI A P{
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	width: 350px;
+	overflow: hidden;
+	font-size: 15px;
+	color:black;
+	text-overflow: ellipsis;
+}
+#list_target_hito LI A P.info{
+	position: absolute;
+	top: 32px;
+	left: 10px;
+	width: 350px;
+	overflow: hidden;
+	font-size: 11px;
+	color:#888;
+	text-overflow: ellipsis;
+}
+
+#list_target_hito LI A SPAN{
+    position: absolute;
+    display: block;
+    top:8px;
+   right: 40px;
+    font-size: 12px;
+    color: #999;
+}
+
+#list_target_hito LI A.selected SPAN{
+   /*  color: #FFF; */
+}
+
+
+
+
+
+
+
+.authorMain{
+    display:block;
+}
+
+
+
+
+#list_target UL.clickable P {
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	width: 350px;
+	overflow: hidden;
+	font-size: 15px;
+	color:black;
+	    text-overflow: ellipsis;
+}
+
+#list_target UL.clickable .selected P,
+#list_target UL.clickable .selected P.creator,
+#list_target_hito .selected P,
+#list_target_hito .selected p.info {
+	/*color: white;*/
+}
+
+#list_target UL.clickable P.title {
+
+}
+
+#list_target UL.clickable P.creator {
+	position: absolute;
+	top: 32px;
+	left: 10px;
+	width: 350px;
+    overflow: hidden;
+    font-size: 11px;
+    color:#999;
+       text-overflow: ellipsis;
+}
+
+
+
+
+#list_target LI SPAN.sign {
+	font-size: 66%;
+	padding: 4px;
+	color: #2f29a0;
+	background-color: #c1ccd7;
+	border: solid 1px #555;
+	line-height: 1.8em;
+
+}
+
+#list_target UL.aidlists {
+	margin-bottom: 8px;
+	border-bottom: solid 2px #000;
+}
+
+
+
+
+
+#list_target LI.aidListHead {
+	border-bottom: solid 1px #333;
+}
+
+#list_target LI.aidListHead A {
+	display: block;
+	padding-top: 9px;
+	padding-bottom: 8px;
+	background-color: #aaa;
+}
+
+#list_target LI.aidListHead A SPAN {
+	display: block;
+	color: #666;
+	font-size: 83%;
+}
+
+#list_target LI.aidListHead A SPAN.aid {
+	font-size: 75%;
+}
+
+#list_area LI.aidList A {
+	padding-left: 8px;
+
+}
+
+#list_target LI.aidList A SPAN.number {
+	display: inline-block;
+	min-width: 28px;
+	padding-right: 9px;
+	color: #888;
+	vertical-align: top;
+}
+
+#list_target LI.aidList A DIV {
+	display: inline-block;
+	width: 340px;
+}
+
+#list_target LI.aidList A P {
+	color: #666;
+	font-size: 75%;
+}
+
+#list_target LI.aidList A P.title {
+	color: #111;
+	font-size: 88%;
+}
+
+#list_target UL.lists {
+	margin-left: 10px;
+	margin-right: 9px;
+}
+
+#list_target LI.samename {
+	padding-left: 9px;
+	line-height: 1.7em;
+	background-color: #777;
+	color: #eee;
+}
+
+#list_target UL.a_ronbun > LI,
+#list_target UL.a_tosho > LI,
+#list_target UL.a_kenkyuu > LI {
+	/* display: none; */
+}
+
+#list_target UL.a_ronbun > LI.head,
+#list_target UL.a_tosho > LI.head,
+#list_target UL.a_kenkyuu > LI.head {
+	display: block;
+}
+
+#list_target LI.head A {
+	display: block;
+	background-color: #bbb;
+}
+
+
+
+
+
+
+#left_bottom, #left_bottom0, #left_bottom1, #left_bottom2{
+    position: relative;
+    height:58px;
+    /*padding-top:12px;*/
+    /*padding-left:165px;*/
+}
+
+
+
+
+#left_bottom P{
+    color:#aaa;
+    font-size: 87%;
+}
+
+
+
+.bottom_contents{
+    display: none;
+    position: relative;
+    background-color: #fff;
+    padding-top:14px;
+    padding-left:192px;
+    width:424px;
+    height:58px;
+}
+.bottom_contents P{
+    font-size:14px !important;
+    color:#bbb !important;
+}
+.bottom_contents P.completeMessage{
+    margin-left: -40px;
+    font-size:15px !important;
+    color:#999 !important;
+}
+.bottom_contents P.noResult{
+    margin-left: -30px;
+    font-size:15px !important;
+    color:#977 !important;
+}
+
+
+
+
+A.addLoadedBtn{
+    display: block;
+    padding-top:11px;
+    padding-left:200px;
+    width:424px;
+    height:58px;
+    background-color: #ffffff;
+}
+
+A.addLoadedBtn P{
+    font-size:16px !important;
+    color:#bbb !important;
+}
+
+
+
+#list_aid_area{
+    background-color: white;
+
+}
+#list_aid_area UL{
+    color:#999;
+    font-size:80%;
+}
+#list_aid_area A{
+    padding-top:10px;
+    padding-left: 12px;
+    padding-bottom: 4px;
+}
+
+
+
+
+
+.hito_part_header {
+    background-color: #eee;
+    height:28px;
+    padding-left: 6px;
+    color: #666;
+    border-top: solid 1px #999;
+    line-height: 28px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+#list_hito-0 .hito_part_header {
+	border-top: 4px solid #408bd4;
+}
+#list_hito-1 .hito_part_header {
+	border-top: 4px solid #884df7;
+}
+
+#list_hito-2 .hito_part_header {
+	border-top: 4px solid #47c566;
+}
+
+
+
+
+
+
+#list_aid_header{
+	background-color: white;
+	height:40px;
+	padding-left: 10px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #999;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+
+
+
+.list_hito_all_header{
+	background-color: white;
+	color: #999;
+	height: 40px;
+	padding-left: 10px;
+	line-height: 40px;
+	font-size: 14px;
+	border-top: 1px solid #ccc;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#list_area LI.aidListTitle {
+	padding-left: 9px;
+	padding-top: 7px;
+	padding-bottom: 8px;
+	height: 38px;
+	background-color: #444;
+	color: #fff;
+	font-size: 108%;
+	border-top: solid 1px #666;
+	border-bottom: solid 1px #aaa;
+}
+
+
+
+
+
+
+
+
+#list_aid_info .aidHeader0{
+    padding-left: 35px;
+    padding-top: 3px;
+    background:#ddd url(../img/icon-article-selected@2x.png) 6px 9px no-repeat;
+    background-size: 24px 24px;
+}
+#list_aid_info .aidHeader1{
+    padding-left: 35px;
+    padding-top: 3px;
+    background:#ddd url(../img/icon-book-selected@2x.png) 6px 9px no-repeat;
+    background-size: 24px 24px;
+}
+#list_aid_info .aidHeader2{
+    padding-left: 15px;
+    padding-top: 3px;
+	background-color: white;
+    background-size: 24px 24px;
+}
+
+
+
+
+#list_aid_info .specialAuthorInfo{
+    padding-top:8px;
+    padding-left:12px;
+    padding-bottom: 7px;
+    font-size: 80%;
+    color:#999;
+    border-bottom: solid 1px #ccc;
+}
+
+
+
+
+#list_aid_info .specialAuthorInfo p.name{
+    font-size: 120%;
+    color:#666;
+}
+
+
+
+
+
+

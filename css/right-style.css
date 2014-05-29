@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+/*******************************************	*/
+/*2013/08/14    */
+/*******************************************	*/
+
+
+
+
+#right_space {
+	margin-left: 424px;
+	border-left: solid 1px #ccc;
+}
+
+#detail_area {
+	padding-left: 20px;
+	padding-right: 20px;
+	overflow: auto;
+	height: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+#detailTarget{
+	margin-top: 18px;
+	margin-bottom: 30px;
+	-webkit-transition: margin-top 0.35s ease-in-out;
+}
+
+
+
+/*# for syousai search box */
+.maginTopFull{
+    margin-top: 326px !important;
+    -webkit-transition: margin-top 0.35s ease-in-out;
+}
+.maginTopShort{
+    margin-top: 80px !important;
+    -webkit-transition: margin-top 0.35s ease-in-out;
+}
+
+
+
+
+
+
+
+#detailTarget P {
+	line-height: 2em;
+	color: #666;
+	font-size:90%;
+}
+
+#detailTarget .name-box {
+	margin-bottom: 20px;
+}
+
+#detailTarget .title {
+	color: #333;
+	line-height: 150%;
+	font-size: 22px;
+}
+
+#detailTarget .title-roma {
+	color: #999;
+}
+
+#detailTarget .description, #detailTarget .description-en {
+	line-height: 160%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#detailTarget P.title SPAN.kana {
+    font-size: 14px;
+    color: #444;
+}
+
+#detailTarget .label, #detailTarget .note  {
+	margin-top: 20px;
+	margin-bottom: 4px;
+	line-height: 1em;
+	color: #aaa;
+}
+
+
+#detailTarget P.link-line {
+	line-height: 2.2em;
+	padding-bottom: 13px;
+	/*word-break: keep-all;*/
+}
+
+#detailTarget P.link-line SPAN {
+	padding-right: 3px;
+}
+#detailTarget .authorlist SPAN{
+    word-break: keep-all;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+
+
+
+#detailTarget A.newlink{
+    display: inline-block;
+    margin: 1px;
+    padding:6px;
+    padding-left:10px;
+    padding-right:34px;
+    padding-bottom: 3px;
+    background: white url('../img/icon-new-link@2x.png') right center no-repeat;
+    background-size: 28px 18px;
+    border-radius: 3px;
+    color: #4684b9;
+    border: 1px solid #ccc;
+    margin-right: 4px;
+}
+
+#detailTarget A.owner{
+    display: inline-block;
+    margin: 1px;
+    padding:6px;
+    padding-left:10px;
+    padding-right:34px;
+    padding-bottom: 3px;
+    background: #e2ebee url('../img/icon-new-link@2x.png') right center no-repeat;
+    background-size: 30px 22px;
+    border-radius: 3px;
+    color: #4186b9;
+}
+#detailTarget SPAN.owner-nolink{
+    display: inline-block;
+    margin: 1px;
+    padding:6px;
+    padding-left:10px;
+    padding-right:11px;
+    padding-bottom: 3px;
+    background: #f0f0f9;
+    background-size: 30px 22px;
+    border-radius: 3px;
+    color: #999999;
+}
+
+#detailTarget UL.ownerlist{
+    padding-left: 18px;
+}
+
+
+
+
+
+#detailTarget A.t-topic{
+    display: inline-block;
+    margin: 1px;
+    padding:6px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 3px;
+    background: #f3f3f3;
+    border: solid 1px #e7e7e7;
+    background-size: 30px 22px;
+    border-radius: 3px;
+    color: #4684b9;
+    margin-right: 4px;
+}
+
+
+
+
+#detailTarget A.refpage{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:4px;
+    padding-left:10px;
+    padding-right:34px;
+    padding-bottom: 2px;
+    background: #ffffcc url('../img/icon-new-tablink@2x.png') right center no-repeat;
+    background-size: 28px 18px;
+    border-radius: 3px;
+    border: 1px solid #dddddd;
+    color: #4186b9;
+
+}
+
+
+
+
+#detailTarget A.key-box {
+	padding: 7px;
+	padding-left: 10px;
+	padding-right: 12px;
+	padding-bottom: 5px;
+
+	border-radius: 2px;
+	border: solid 1px #dbca6a;
+	background-color: #fffbdf;
+}
+#detailTarget .authorlist{
+    line-height: 2.2em;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+#detailTarget A.key-box_non{
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: solid 1px #dcd7d9;
+    background-color: #fcf4f5;
+    color: #4684b9;
+}
+#detailTarget A.key-box_non SPAN{
+    font-size:75%;
+    color:#aaa;
+}
+
+
+
+
+
+#detailTarget .kenkyu-daihyo SPAN,  #detailTarget .kenkyu-buntan SPAN{
+    word-break: keep-all;
+    display: inline-block;
+    margin:2px;
+}
+#detailTarget .kenkyu-daihyo A.key-box {
+    display: block;
+    width: 272px;
+    max-width: 280px;
+    overflow: hidden;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: solid 1px #dbca6a;
+    background-color: #fffbdf;
+        vertical-align: top;
+}
+
+#detailTarget .kenkyu-daihyo {
+	margin-bottom: 20px;
+
+}
+
+#detailTarget A.key-box P{
+    line-height: 1.3em;
+}
+
+#detailTarget .kenkyu-buntan A.key-box {
+    display: inline-block;
+    width: 272px;
+    max-width: 280px;
+    overflow: hidden;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: solid 1px #d1c9a1;
+    background-color: #f5f0eb;
+    vertical-align: top;
+}
+#detailTarget .kenkyu-daihyo P, #detailTarget .kenkyu-buntan P  {
+    font-size: 78%;
+}
+#detailTarget .kenkyu-daihyo P.name, #detailTarget .kenkyu-buntan P.name  {
+    font-size: 100%;
+    color: #4684b9;
+    margin-bottom: 5px;
+}
+
+
+
+
+#detailTarget DIV.k-docyear-group{
+    margin-bottom: 3px;
+    padding: 4px;
+    padding-left: 14px;
+    background-color: #fafafa;
+    border: solid 1px #f1f1f1;
+}
+
+
+
+#detailTarget .summary{
+    padding: 4px 15px 7px 12px;
+}
+
+
+
+
+
+/*特定人物用*/
+
+
+
+#detailTarget .selectBox{
+	display: inline-block;
+    background-color: #f8f8f8;
+    padding:8px;
+}
+
+#detailTarget .selectBox A{
+    display: inline-block;
+    margin-right: 6px;
+    width:172px;
+    background-color: #fff;
+    padding:10px;
+    border: solid 1px #999;
+    border-radius: 3px;
+    font-size: 95%;
+    color:#000;
+}
+
+#detailTarget .selectBox A:last-child {
+	margin-right: 0;
+}
+
+#detailTarget .selectBox A.notActive{
+    background-color: #ccc;
+    color:#999;
+}
+
+
+
+#detailTarget .selectBox A SPAN{
+    font-size: 90%;
+    color:#666;
+}
+
+#detailTarget .selectBox A.notActive SPAN{
+    color:#aaa;
+}
+
+
+
+

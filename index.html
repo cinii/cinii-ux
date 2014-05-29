@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=1024, user-scalable=1, initial-scale=1, maximum-scale=3">
+	<meta name="keywords" content="" />
+	<meta name="description" content="2013 sociomedia" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+
+	<title>CiNii タブレット版プロト</title>
+
+
+	<script src="./js/jquery-2.0.3.min.js"></script>
+
+
+
+
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/common.css" />
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/left-style.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/right-style.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/detail-search.css" />
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/parts-style.css" />
+
+
+
+
+
+
+
+
+
+
+
+	<script src="./js/setup.js"></script>
+
+	<script src="./js/niiModel.js"></script>
+
+    <script src="./js/niiView.js"></script>
+		<script src="./js/niiViewSettings.js"></script>
+        <script src="./js/niiViewClass.js"></script>
+
+	<script src="./js/niiControlller.js"></script>
+        <script src="./js/niiLoadXmlClass.js"></script>
+
+
+
+</head>
+
+
+
+
+
+
+
+
+<body id="ciniilayout">
+<header id="header">
+
+    <div id="rootNavi"><a class="homeBtn" href="javascript:void(0);"></a></div>
+
+	<nav id="navi">
+
+		<ul>
+			<li class="js-navi-ronbun " ><a href="javascript:void(0);" class=""><span>論文</span>
+                <div class="miniCircleBase"></div>
+            </a></li><!--
+			--><li class="js-navi-tosyo " ><a href="javascript:void(0);" class=""><span>図書</span>
+            <div class="miniCircleBase"></div>
+
+        </a></li><!--
+			--><li class="js-navi-kenkyu " ><a href="javascript:void(0);"><span>研究</span>
+            <div class="miniCircleBase"></div>
+
+        </a></li><li class="js-navi-hito " ><a href="javascript:void(0);"><span>人</span>
+            <div class="miniCircleBase"></div>
+
+        </a></li>
+		</ul>
+	</nav>
+
+
+
+
+	<div id="header-search">
+
+		<form id="form-body">
+			<input type="text" id="kani-search-form" class="header-search-box" name="ksf"
+			       placeholder="キーワード" autocapitalize="off" results="10"
+                   autocomplete="on" list="keywords" />
+               <datalist id="keywords">
+                    <option value="デザイン" >（論文検索)</option>
+
+               </datalist>
+
+		</form>
+		<div id="header-search-btn"	><a href="javascript:void(0);">検索</a></div>
+	</div>
+
+
+
+</header>
+
+
+
+<div id="container" class="clearfix">
+
+    <!--scrollBase-->
+	<div id="left_wrapper" class="bouceScrollLock ciniilogo js_fitHeight">
+
+		<section id="list_area">
+
+
+			<div id="list_target">
+				<!--<ul listTarget>-->
+					<!--<li></li>-->
+				<!--</ul>-->
+			</div>
+
+
+            <div id="left_bottom"> <!-- for indicatior-->
+                <div class="bottom_contents">
+	                <figure class="CircleTarget addLoadingSymbol"></figure>
+                    <p id="loadmessage">+20件<span id="number"></span></p>
+                </div>
+            </div>
+
+		</section>
+
+	</div>
+	<div id="syousai-area">
+        <div id="syousai" class="">
+		    <a href="javascript:void(0);" class="syousai-btn" ><span id="setumei">詳細検索 ≫</span><div id="syousaiBtnIcon"></div></a>
+        </div>
+		<div class='totalResults' ></div>
+	</div>
+
+
+	<div id="right_space" class="">
+		<section id="detail_area" class="bouceScrollLock js_fitHeight">
+
+			<div id="detailTarget">
+
+			</div>
+		</section>
+
+	</div>
+
+
+
+
+
+
+
+    <div id="syousai-id-0" class="syousai-box" data-ctg ="0" style="">
+        <p class="box-title box-ti-ronbun">論文 | 詳細検索 </p>
+        <a href="javascript:void(0);" class="tenkai"></a>
+        <a href="javascript:void(0);" class="clearAndClose">×</a>
+
+
+        <div class="syousai-group syousi-top-first">
+            <section class="s-r-01">
+                <p class="syousai-label">論文名</p>
+                <input type="text" id="s-r-01" class="s-text-commmon" name="sr01"
+                       placeholder="論文名に含まれるワード" autocapitalize="off" />
+            </section>
+        </div>
+        <div class="syousai-group">
+            <section class="s-r-02">
+                <p class="syousai-label">論文著者名</p>
+                <input type="text" id="s-r-02" class="s-text-commmon" name="sr02"
+                       placeholder="論文著者名" autocapitalize="off" />
+            </section>
+        </div>
+        <div class="syousai-group">
+            <section class="s-r-03">
+                <p class="syousai-label">出版期間</p>
+                <input type="month" id="syousai-yy_start" class="syousai-search-year" name="sr03a" value="1977-01" min="1970-01-01" />
+                <p class="syousai-term">から</p>
+                <input type="month" id="syousai-yy_end" class="syousai-search-year" name="sr03b" value="2013-09" min="1970-01-01" />
+                <p class="syousai-term">まで</p>
+            </section>
+        </div>
+
+
+        <!--<a href="javascript:void(0);" class="syousai-sabmit">検索 <span>（絞り込み: X 件)</span></a>-->
+
+        <div class="syousai-sortorder">
+            <label id="sort-r" class="sortorderLabelStyle">表示順</label>
+            <select id="sortorder-r" class="sortselector" name="sort-r">
+                <option value="0" selected="selected">出版年 新しい順</option>
+                <option value="1">出版年 古い順</option>
+                <option value="2">論文名 五十音順</option>
+                <option value="3">論文名 五十音逆順</option>
+                <option value="4">刊行物名 五十音順</option>
+                <option value="5">刊行物名 五十音逆順</option>
+                <option value="6">被引用件数 多い順</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div id="syousai-id-1" class="syousai-box" data-ctg ="1" style="">
+        <p class="box-title box-ti-tosho">図書 | 詳細検索 </p>
+
+        <div class="syousai-group syousi-top-first">
+            <section class="s-t-01">
+                <p class="syousai-label">図書名</p>
+                <input type="text" id="s-t-01" class="s-text-commmon" name="st01"
+                       placeholder="図書名に含まれるワード" autocapitalize="off" />
+            </section>
+        </div>
+        <div class="syousai-group">
+            <section class="s-t-02">
+                <p class="syousai-label">図書著者名</p>
+                <input type="text" id="s-t-02" class="s-text-commmon" name="st02"
+                       placeholder="図書著者名" autocapitalize="off" />
+            </section>
+        </div>
+        <div class="syousai-group">
+            <section class="s-t-03">
+                <p class="syousai-label">出版期間</p>
+                <input type="month" id="syousai-t-yy_start" class="syousai-search-year" name="st03a" value="1977-01" min="1950-01-01" />
+                <p class="syousai-term">から</p>
+                <input type="month" id="syousai-t-yy_end" class="syousai-search-year" name="st03b" value="2013-09" min="1970-01-01" />
+                <p class="syousai-term">まで</p>
+            </section>
+        </div>
+
+
+
+        <a href="javascript:void(0);" class="tenkai"></a>
+        <a href="javascript:void(0);" class="clearAndClose">×</a>
+
+        <!--<a href="javascript:void(0);" class="syousai-sabmit">検索（絞り込み: X 件)</a>-->
+
+        <div class="syousai-sortorder">
+            <label id="sort-t" class="sortorderLabelStyle">表示順</label>
+            <select id="sortorder-t" class="sortselector" name="sort-t">
+                <option value="1" selected="selected">検索スコア順</option>
+                <option value="2">出版年昇順</option>
+                <option value="3">出版年降順</option>
+                <option value="4">所蔵館数昇順</option>
+                <option value="5">所蔵館数降順</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    <div id="syousai-id-2" class="syousai-box" data-ctg ="2" style="">
+        <p class="box-title box-ti-kenkyu">研究 | 詳細検索 </p>
+
+        <div class="syousai-group syousi-top-first">
+            <section class="s-k-01">
+                <p class="syousai-label">研究分野</p>
+                <input type="text" id="s-k-01" class="s-text-commmon" name="sk01"
+                       placeholder="研究分野名に含まれるワード" autocapitalize="off" />
+            </section>
+        </div>
+        <div class="syousai-group">
+            <section class="s-k-02">
+                <p class="syousai-label">研究者情報</p>
+                <input type="text" id="s-k-02" class="s-text-commmon" name="sk02"
+                       placeholder="研究者名・研究者所属機関名" autocapitalize="off" />
+            </section>
+        </div>
+        <div class="syousai-group">
+            <section class="s-k-03">
+                <p class="syousai-label">採択年度</p>
+                <input type="month" id="syousai-k-yy_start" class="syousai-search-year" name="sk03a" value="1977-01" min="1965-01-01" />
+                <p class="syousai-term">から</p>
+                <input type="month" id="syousai-k-yy_end" class="syousai-search-year" name="sk03b" value="2013-09" min="1970-01-01" />
+                <p class="syousai-term">まで</p>
+            </section>
+        </div>
+
+
+        <a href="javascript:void(0);" class="tenkai"></a>
+        <a href="javascript:void(0);" class="clearAndClose">×</a>
+
+
+        <!--<a href="javascript:void(0);" class="syousai-sabmit">検索（絞り込み: X 件)</a>-->
+
+        <div class="syousai-sortorder">
+            <label id="sort-k" class="sortorderLabelStyle">表示順</label>
+            <select id="sortorder-k" class="sortselector" name="sort-k">
+                <option value="0" selected="selected">研究開始日:新しい順</option>
+                <option value="1">研究開始日:古い順</option>
+                <option value="2">:配分額合計:多い順</option>
+                <option value="3">配分額合計:少ない順</option>
+            </select>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>

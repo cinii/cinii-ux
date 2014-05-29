@@ -1,0 +1,489 @@
+
+
+
+
+.syousai-box{
+    display:none;
+    position: absolute;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    /*padding: 7px;*/
+    top: 0;
+    left: 424px;
+    right: 0;
+    height:49px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.35);
+    z-index: 1100;
+}
+
+.box-title {
+    padding-left: 15px;
+    width:180px;
+    height: 48px;
+    line-height: 48px;
+    color: #333;
+}
+
+.box-ti-ronbun{
+    background-color: #d0e2f4;
+}
+.box-ti-tosho{
+    background-color: #e2ccfd;
+}
+.box-ti-kenkyu{
+    background-color: #ccf2da;
+}
+
+
+
+
+
+.modefull{
+    height:304px;
+
+}
+
+.opened{
+    display:block;
+}
+
+
+.clearAndClose{
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
+    width:48px;
+    height:48px;
+    padding-top:0;
+    font-size:30px;
+    color:#ccc;
+    text-align: center;
+}
+
+
+.tenkai{
+    display: block;
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:46px;
+    /*paddint-top:9px;*/
+    /*font-size:30px;*/
+    /*color:#555;*/
+    /*background-color: #ddd;*/
+    background:url('../img/syousaiToggleUpper.png') center center no-repeat;
+    background-size: 36px 36px;
+
+}
+.tenkaiOpen{
+    width:108px;
+    background:url('../img/syousaiToggleDowner.png') 12px center no-repeat;
+    background-size: 36px 36px;
+}
+
+
+
+
+
+.syousai-sabmit{
+    display: block;
+    position: absolute;
+    top:272px;
+    left:0;
+    width:238px;
+    height:48px;
+    padding-top:14px;
+    padding-left: 41px;
+    background-color: #d9d9d9;
+    background:url('../img/niiSyousaiSubmit.png') left center no-repeat;
+    background-size: 36px 36px;
+    border-top: solid 1px #ccc;
+    color:#555;
+}
+.syousai-sabmit SPAN{
+    font-size: 80%;
+    color:#999;
+}
+
+
+
+
+
+.syousai-sortorder{
+    display: block;
+    position: absolute;
+    top:1px;
+    left:182px;
+    padding-top:6px;
+    width:294px;
+    height:48px;
+    text-align: center;
+    font-size: 100%;
+    color: #555;
+}
+
+
+
+LABEL.sortorderLabelStyle{
+    display: inline-block;
+    font-size: 80%;
+    color:#999;
+}
+
+.sortselector{
+    padding:3px;
+    padding-left:5px;
+    height:38px;
+    width:238px;
+    -webkit-appearance:button;
+    -moz-appearance:button;
+    appearance:button;
+    background-color: #eaeaea;
+    border-radius: 0;
+    border: solid 1px #e2e2e2;
+    font-size: 90%;
+}
+
+
+
+
+
+
+.syousai-group{
+    padding:8px;
+    border-top: solid 1px #e9e9e9;
+    border-bottom: solid 1px #e9e9e9;
+}
+.syousi-top-first{
+}
+
+P.syousai-label, P.syousai-term{
+    display: inline-block;
+    padding-top: 14px;
+    width:78px;
+    color: #888;
+    font-size: 88%;
+}
+P.syousai-term{
+    width:44px;
+}
+
+.s-text-commmon{
+    margin:7px;
+    padding-left:3px;
+    padding-top:3px;
+    -webkit-box-sizing:border-box;
+    width:454px;
+    height:38px;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+.syousai-search-year{
+    margin:7px;
+    margin-right:0;
+    padding-left:3px;
+    padding-top:3px;
+    -webkit-box-sizing:border-box;
+    width:172px;
+    height:38px;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+
+
+
+
+
+
+
+
+.totalResults {
+    display: none;
+    position: absolute;
+    left:10px;
+    top: 0;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    z-index: 99999;
+    line-height: 48px;
+}
+
+
+
+.totalResults SPAN{
+    display: inline-block;
+    padding-top:5px;
+    padding-left: 6px;
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+.totalResults .ctg0, .totalResults .ctg1, .totalResults .ctg2{
+    display: inline-block;
+    line-height: 1.1em;
+    padding: 4px;
+    font-size:14px;
+    color:#fff;
+}
+.totalResults .ctg0{
+    background-color: #408bd4;
+}
+.totalResults .ctg1{
+    background-color: #884df7;
+}
+.totalResults .ctg2{
+    background-color: #47c566;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#syousai-area {
+    position: absolute;
+    /*Fixedから変更*/
+    top: 0;
+    width: 424px;
+    height:58px;
+    overflow: hidden;
+    opacity: 0.89;
+    z-index: 1099;
+}
+#syousai{
+    display: block;
+    position: relative;
+    margin-top: 0;
+    height: 48px;
+    /*background-color: #d2d5d7;*/
+    background-color: white;
+    font-size: 92%;
+    z-index: 99;
+    border-bottom: solid 1px #ccc;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.27);
+    -webkit-transition: margin-top 0.35s ease-in-out;
+}
+
+.syousai-hide{
+    margin-top: -50px !important;
+    -webkit-transition: margin-top 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.syousai-btn {
+    display: block;
+    position: absolute;
+    right:0;
+    width:240px;
+    height:48px;
+    padding-top: 24px;
+
+    /*border-bottom: solid 1px #ccc;*/
+    /*box-shadow: 0 2px 4px -2px rgba(0,0,0,0.25);*/
+}
+
+.syousai-btn #setumei{
+    position: absolute;
+    top:13px;
+    left:78px;
+    color: #f8f8f8;
+    font-size: 106%;
+
+}
+.syousai-btn #syousaiBtnIcon{
+    position: absolute;
+    width:33px;
+    height:48px;
+    top:0;
+    right:14px;
+    /*background:url('../img/niiSyousaiButtonIcon.png') right center no-repeat;*/
+	background-image: url(../img/gear.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 32px 32px;
+    opacity: 0.6;
+}
+
+
+
+
+
+
+#syousai-search {
+    position: absolute;
+    padding: 7px;
+    padding-top: 1px;
+    top: 0;
+    left: 424px;
+}
+
+#syousai-body {
+    background-color: #666;
+    width: 584px;
+    height: 614px;
+    border: solid 2px #444;
+    border-radius: 7px;
+    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+/*.box-title {*/
+    /*padding: 9px;*/
+
+/*}*/
+
+#syousai-body SECTION {
+    padding: 9px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    border-bottom: solid 1px #777;
+}
+
+#syousai-body P {
+    padding-left: 3px;
+    font-size: 88%;
+    line-height: 1.22em;
+    color: #aaa;
+}
+
+#syousai-body P.box-title {
+    display: block;
+    padding: 9px;
+    padding-bottom: 6px;
+    font-size: 96%;
+    line-height: 1.1em;
+    color: #eee;
+    border-bottom: solid 1px #999;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 8px;
+    left: 538px;
+}
+
+.closeBtn A.closeBtnBody {
+    display: block;
+    padding-top: 2px;
+    width: 40px;
+    height: 38px;
+    background-color: #999;
+    font-size: 38px;
+    line-height: 1em;
+    color: #333;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.s_titile .syousai-search-box {
+    width: 544px;
+}
+
+.syousai-search-box {
+    height: 27px;
+    font-size: 16px;
+    line-height: 1.25em;
+}
+
+
+
+
+
+
+
+#syousai-submit {
+    display: block;
+    margin-top: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    width: 292px;
+    height: 48px;
+    background: #ddd;
+    border: solid 1px #888;
+    text-align: center;
+    color: #555;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    /* 	-webkit-appearance: textfield; */
+
+    padding-left: 3px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    font-size: 16px;
+    line-height: 1.3em;
+    height: 36px;
+}
+
+input[type="number"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+input[type="search"]:focus {
+    /*   outline-offset: -2px; */
+    outline-offset: -2px;
+    background-color: #e0fcff;
+    -webkit-box-shadow: 0px 0px 3px #5ddbff;
+}
+
+#left_bottomSearching {
+    position: fixed;
+    bottom: 0;
+    /*top:48px;*/
+    height: 6px;
+    z-index: 99;
+}
+
+/*#canvasSecond {*/
+/*width: 428px;*/
+/*height: 6px;*/
+/*line-height: 0;*/
+/*}*/
+
+
+
+
+#addLoadArea {
+    padding-top: 12px;
+    height: 66px;
+    background-color: #eee;
+    color: #c3c3c3;
+    text-align: center;
+}
+
