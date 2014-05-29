@@ -1,7 +1,7 @@
 cinii-ux
 ========
 
-CiNii Articles/Books・KAKENのデータを対象とした新しいユーザインターフェイスを考えるプロジェクトです。
+CiNii Articles/Books・KAKENのデータを対象とした新しいユーザインターフェイスを考えるプロジェクトです。デモは http://www-kasm.nii.ac.jp/~i2k/cinii-ux で動作しています。
 
 # 導入手順
 ソースコード一式を動作させる条件は以下のとおりです。
