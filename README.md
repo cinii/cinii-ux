@@ -76,7 +76,7 @@ PHP
 クロスドメイン制約の回避の為の共通PHPライブラリ（プログラム）※ 80番ポート Socket方式http://www.muratayusuke.com/works/#PHPSocket (村田佑介氏 作）
 * /php/php_lib/simple_html_dom.php
 PHPで指定URLのHTMLを解析するライブラリ
-http://simplehtmldom.sourceforge.net/ by. S.C. Chen (me578022@gmail.com)  作
+http://simplehtmldom.sourceforge.net/ by. S.C. Chen (me578022 {at} gmail.com)  作
 * /php/R_result.php
 論文検索にて、論文一覧を取得するスクリプト
 *  /php/R_rdf.php
